@@ -16,7 +16,7 @@ function App() {
   const { user, setUser } = useContext(AuthContext);
   const { postDetails, setPostDetails } = useContext(PostContext)
   useEffect(() => {
-    const auth = getAuth()
+    const auth =  getAuth()
     onAuthStateChanged(auth, (user) => {
       setUser(user)
     })
